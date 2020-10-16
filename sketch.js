@@ -58,72 +58,72 @@ function setup() {
   skygroup = new Group();
   cloudGroup = new Group();
 
-  skys1 = createSprite(width-490,height-56,400,20);
+  skys1 = createSprite(width-490,height-100,400,20);
   skys1.addImage("ground",sky);  
   skys1.scale = 2;
   skygroup.add(skys1);
 
-  skys2 = createSprite(width-490,height-168,400,20);
+  skys2 = createSprite(width-490,height-300,400,20);
   skys2.addImage("ground",sky);  
   skys2.scale = 2;
   skygroup.add(skys2);
 
-  skys3 = createSprite(width-490,height-280,400,20);
+  skys3 = createSprite(width-490,height-600,400,20);
   skys3.addImage("ground",sky);  
   skys3.scale = 2;
   skygroup.add(skys3);
 
-  skys4 = createSprite(width-490,height-392,400,20);
+  skys4 = createSprite(width-490,height-900,400,20);
   skys4.addImage("ground",sky);  
   skys4.scale = 2;
   skygroup.add(skys4);
 
-  skys5 = createSprite(width-490,height-504,400,20);
+  skys5 = createSprite(width-490,height-1200,400,20);
   skys5.addImage("ground",sky);  
   skys5.scale = 2;
   skygroup.add(skys5);
 
-  skys6 = createSprite(width-490,height-616,400,20);
+  skys6 = createSprite(width-490,height-1500,400,20);
   skys6.addImage("ground",sky);  
   skys6.scale = 2;
   skygroup.add(skys6);
 
-  skys7 = createSprite(width-490,height-728,400,20);
+  skys7 = createSprite(width-490,height-1800,400,20);
   skys7.addImage("ground",sky);  
   skys7.scale = 2;
   skygroup.add(skys7);
 
-  skys8 = createSprite(width-490,height-840,400,20);
+  skys8 = createSprite(width-490,height-2100,400,20);
   skys8.addImage("ground",sky);  
   skys8.scale = 2;
   skygroup.add(skys8);
 
-  skys9 = createSprite(width-490,height-952,400,20);
+  skys9 = createSprite(width-490,height-2200,400,20);
   skys9.addImage("ground",sky);  
   skys9.scale = 2;
   skygroup.add(skys9);
 
-  skys10= createSprite(width-490,height-1064,400,20);
+  skys10= createSprite(width-490,height-2400,400,20);
   skys10.addImage("ground",sky);  
   skys10.scale = 2;
   skygroup.add(skys10);
 
-  skys11 = createSprite(width-490,height-1176,400,20);
+  skys11 = createSprite(width-490,height-2500,400,20);
   skys11.addImage("ground",sky);  
   skys11.scale = 2;
   skygroup.add(skys11);
 
-  skys12 = createSprite(width-490,height-1288,400,20);
+  skys12 = createSprite(width-490,height-2788,400,20);
   skys12.addImage("ground",sky);  
   skys12.scale = 2;
   skygroup.add(skys12);
 
-  skys13 = createSprite(width-490,height-1400,400,20);
+  skys13 = createSprite(width-490,height-2900,400,20);
   skys13.addImage("ground",sky);  
   skys13.scale = 2;
   skygroup.add(skys13);
 
-  skys14 = createSprite(width-490,height-1512,400,20);
+  skys14 = createSprite(width-490,height-3112,400,20);
   skys14.addImage("ground",sky);  
   skys14.scale = 2;
   skygroup.add(skys14);
@@ -615,8 +615,8 @@ if(sea6.y<=height+896/2){
   sea6.y=sea5.y-896
  sea16}
 function farground(){
-  if(farg.y<=-300){
-    farg.y=height-height+100;
+  if(farg.y<=height+50){
+    farg.y= -(height)+100;
   }}
 
 
