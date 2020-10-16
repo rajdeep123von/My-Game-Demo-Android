@@ -58,106 +58,106 @@ function setup() {
   skygroup = new Group();
   cloudGroup = new Group();
 
-  skys1 = createSprite(56,150,400,20);
+  skys1 = createSprite(56,height-490,400,20);
   skys1.addImage("ground",sky);  
   skys1.scale = 1;
   skygroup.add(skys1);
 
-  skys2 = createSprite(skys1.x+112,150,400,20);
+  skys2 = createSprite(skys1.x+112,height-490,400,20);
   skys2.addImage("ground",sky);  
   skys2.scale = 1;
   skygroup.add(skys2);
 
-  skys3 = createSprite(skys2.x+112,150,400,20);
+  skys3 = createSprite(skys2.x+112,height-490,400,20);
   skys3.addImage("ground",sky);  
   skys3.scale = 1;
   skygroup.add(skys3);
 
-  skys4 = createSprite(skys3.x+112,150,400,20);
+  skys4 = createSprite(skys3.x+112,height-490,400,20);
   skys4.addImage("ground",sky);  
   skys4.scale = 1;
   skygroup.add(skys4);
 
-  skys5 = createSprite(skys4.x+112,150,400,20);
+  skys5 = createSprite(skys4.x+112,height-490,400,20);
   skys5.addImage("ground",sky);  
   skys5.scale = 1;
   skygroup.add(skys5);
 
-  skys6 = createSprite(skys5.x+112,150,400,20);
+  skys6 = createSprite(skys5.x+112,height-490,400,20);
   skys6.addImage("ground",sky);  
   skys6.scale = 1;
   skygroup.add(skys6);
 
-  skys7 = createSprite(skys6.x+112,150,400,20);
+  skys7 = createSprite(skys6.x+112,height-490,400,20);
   skys7.addImage("ground",sky);  
   skys7.scale = 1;
   skygroup.add(skys7);
 
-  skys8 = createSprite(skys7.x+112,150,400,20);
+  skys8 = createSprite(skys7.x+112,height-490,400,20);
   skys8.addImage("ground",sky);  
   skys8.scale = 1;
   skygroup.add(skys8);
 
-  skys9 = createSprite(skys8.x+112,150,400,20);
+  skys9 = createSprite(skys8.x+112,height-490,400,20);
   skys9.addImage("ground",sky);  
   skys9.scale = 1;
   skygroup.add(skys9);
 
-  skys10= createSprite(skys9.x+112,150,400,20);
+  skys10= createSprite(skys9.x+112,height-490,400,20);
   skys10.addImage("ground",sky);  
   skys10.scale = 1;
   skygroup.add(skys10);
 
-  skys11 = createSprite(skys10.x+112,150,400,20);
+  skys11 = createSprite(skys10.x+112,height-490,400,20);
   skys11.addImage("ground",sky);  
   skys11.scale = 1;
   skygroup.add(skys11);
 
-  skys12 = createSprite(skys11.x+112,150,400,20);
+  skys12 = createSprite(skys11.x+112,height-490,400,20);
   skys12.addImage("ground",sky);  
   skys12.scale = 1;
   skygroup.add(skys12);
 
-  skys13 = createSprite(skys12.x+112,150,400,20);
+  skys13 = createSprite(skys12.x+112,height-490,400,20);
   skys13.addImage("ground",sky);  
   skys13.scale = 1;
   skygroup.add(skys13);
 
-  skys14 = createSprite(skys13.x+112,150,400,20);
+  skys14 = createSprite(skys13.x+112,height-490,400,20);
   skys14.addImage("ground",sky);  
   skys14.scale = 1;
   skygroup.add(skys14);
 
-  sea3 = createSprite(896/2,800,400,20);
+  sea3 = createSprite(896/2,height+160,400,20);
   sea3.addImage("ground",groundImage); 
   sea3.velocityX = -7
   sea3.scale = 8;
 
-  sea2 = createSprite(sea3.x+896,800,400,20);
+  sea2 = createSprite(sea3.x+896,height+160,400,20);
   sea2.addImage("sea",groundImage);
   sea2.velocityX = -7;
   sea2.scale = 8;
 
-  sea1 = createSprite(sea2.x+896,800,400,20);
+  sea1 = createSprite(sea2.x+896,height+160,400,20);
   sea1.addImage("sea2",groundImage);
   sea1.velocityX = -7;
   sea1.scale = 8;
 
-  clouds1 = createSprite(270,300,400,20);
+  clouds1 = createSprite(270,height-340,400,20);
   clouds1.addImage("clouds",clouds);
   cloudGroup.add(clouds1);
 
-  clouds2 = createSprite(clouds1.x+clouds1.width,300,400,20);
+  clouds2 = createSprite(clouds1.x+clouds1.width,height-340,400,20);
   clouds2.addImage("clouds",clouds);
   cloudGroup.add(clouds2);
 
   
-  clouds3 = createSprite(clouds2.x+clouds2.width,300,400,20);
+  clouds3 = createSprite(clouds2.x+clouds2.width,height-340,400,20);
   clouds3.addImage("clouds",clouds);
   cloudGroup.add(clouds3);
 
   
-  farg = createSprite(width+30,390,400,20);
+  farg = createSprite(width+30,height-250,400,20);
   farg.addImage("sea",fg);
   farg.scale = 0.5;
   farg.velocityX = -3;
@@ -165,7 +165,7 @@ function setup() {
 
 
  
-  ship = createSprite(500,300);
+  ship = createSprite(500,height-340);
   ship.addImage( "running",ship_img);
   ship.scale = 0.4;
   ship.velocityX = -3;
@@ -254,10 +254,10 @@ function setup() {
   
 
   
-  gameover = createSprite(windowWidth/2,310,20,20);
+  gameover = createSprite(windowWidth/2,height-330,20,20);
   gameover.addImage(gameoverimage);
   
-  restart = createSprite(windowWidth/2,630,20,20);
+  restart = createSprite(windowWidth/2,height-10,20,20);
   restart.addImage(restartimage);
 
   
@@ -272,7 +272,7 @@ function setup() {
   
   title = createElement('h2');
   title.html("Pirate Runner");
-  title.position(windowWidth / 2 - 80,-20);
+  title.position(windowWidth / 2 - 80,height-660);
   
   Button = createButton("Play Sound");
   Button.mousePressed(togglePlay);
@@ -428,7 +428,7 @@ console.log(frameCount);
   textSize(40);
   textFont("Chiller");
   fill(254, 147, 36);
-  text("Score: "+ score, width-200,70);
+  text("Score: "+ score, width-200,height-570);
 
 }
 function keyPressed(){
@@ -448,9 +448,9 @@ function keyPressed(){
 function spawntiles() {
   //write code here to spawn the clouds
   if (frameCount% 79 === 0 ) {
-    var tiles = createSprite(width+50 ,390,40,10);
+    var tiles = createSprite(width+50 ,height-250,40,10);
    
-    tiles.y = Math.round(random(330,600));
+    tiles.y = Math.round(random(height-310,height-40));
     tiles.addImage("tile",tile);
     tiles.scale = 2.5;
     tiles.setCollider("rectangle",0,0,60,37,0);   
@@ -522,9 +522,9 @@ function spawntiles() {
   }}*/
   function spawnbirds(){
     if(frameCount% 156=== 0){
-      var bird = createSprite(width+50,100,20,20);
+      var bird = createSprite(width+50,height-540,20,20);
       bird.addAnimation("flying",bird_img);
-      bird.y = Math.round(random(100,400));
+      bird.y = Math.round(random(height-540,height-240));
       bird.velocityX = -8;
       bird.scale=0.8;
       bird.setCollider("rectangle",0,0,50,20,0);
@@ -582,7 +582,7 @@ function reset() {
   objGroup.setVisibleEach(true);
   plr.x = 350;
   plr.velocityX = 0;
-  plr.y = 460;
+  plr.y = height-150;
   ship.x = 500;
   land1.x = 400;
   land2.x = 530;
