@@ -60,108 +60,108 @@ function setup() {
 
   skys1 = createSprite(width-490,height-100,400,20);
   skys1.addImage("ground",sky);  
-  skys1.scale = 2;
+  skys1.scale = 3;
   skygroup.add(skys1);
 
   skys2 = createSprite(width-490,height-300,400,20);
   skys2.addImage("ground",sky);  
-  skys2.scale = 2;
+  skys2.scale = 3;
   skygroup.add(skys2);
 
   skys3 = createSprite(width-490,height-600,400,20);
   skys3.addImage("ground",sky);  
-  skys3.scale = 2;
+  skys3.scale = 3;
   skygroup.add(skys3);
 
   skys4 = createSprite(width-490,height-900,400,20);
   skys4.addImage("ground",sky);  
-  skys4.scale = 2;
+  skys4.scale = 3;
   skygroup.add(skys4);
 
   skys5 = createSprite(width-490,height-1200,400,20);
   skys5.addImage("ground",sky);  
-  skys5.scale = 2;
+  skys5.scale = 3;
   skygroup.add(skys5);
 
   skys6 = createSprite(width-490,height-1500,400,20);
   skys6.addImage("ground",sky);  
-  skys6.scale = 2;
+  skys6.scale = 3;
   skygroup.add(skys6);
 
   skys7 = createSprite(width-490,height-1800,400,20);
   skys7.addImage("ground",sky);  
-  skys7.scale = 2;
+  skys7.scale = 3;
   skygroup.add(skys7);
 
   skys8 = createSprite(width-490,height-2100,400,20);
   skys8.addImage("ground",sky);  
-  skys8.scale = 2;
+  skys8.scale = 3;
   skygroup.add(skys8);
 
   skys9 = createSprite(width-490,height-2200,400,20);
   skys9.addImage("ground",sky);  
-  skys9.scale = 2;
+  skys9.scale = 3;
   skygroup.add(skys9);
 
   skys10= createSprite(width-490,height-2400,400,20);
   skys10.addImage("ground",sky);  
-  skys10.scale = 2;
+  skys10.scale = 3;
   skygroup.add(skys10);
 
   skys11 = createSprite(width-490,height-2500,400,20);
   skys11.addImage("ground",sky);  
-  skys11.scale = 2;
+  skys11.scale = 3;
   skygroup.add(skys11);
 
   skys12 = createSprite(width-490,height-2788,400,20);
   skys12.addImage("ground",sky);  
-  skys12.scale = 2;
+  skys12.scale = 3;
   skygroup.add(skys12);
 
   skys13 = createSprite(width-490,height-2900,400,20);
   skys13.addImage("ground",sky);  
-  skys13.scale = 2;
+  skys13.scale = 3;
   skygroup.add(skys13);
 
   skys14 = createSprite(width-490,height-3112,400,20);
   skys14.addImage("ground",sky);  
-  skys14.scale = 2;
+  skys14.scale = 3;
   skygroup.add(skys14);
   skygroup.setRotationEach(-90);
+  skygroup.setScaleEach(3);
 
 
-
-  sea3 = createSprite(width+160,height-896/2,400,20);
+  sea3 = createSprite(width+50,height-896/2,400,20);
   sea3.addImage("ground",groundImage); 
   sea3.velocityY = 7
   sea3.scale = 8;
   sea3.rotation = -90;
 
-  sea2 = createSprite(width+160,sea3.y+896,400,20);
+  sea2 = createSprite(width+50,sea3.y+896,400,20);
   sea2.addImage("sea",groundImage);
   sea2.velocityY = 7;
   sea2.scale = 8;
   sea2.rotation = -90;
 
-  sea1 = createSprite(width+160,sea2.y+896,400,20);
+  sea1 = createSprite(width+50,sea2.y+896,400,20);
   sea1.addImage("sea2",groundImage);
   sea1.velocityY = 7;
   sea1.scale = 8;
   sea1.rotation = -90;
 
-  sea4 = createSprite(width+160,sea1.y+896,400,20);
+  sea4 = createSprite(width+50,sea1.y+896,400,20);
   sea4.addImage("sea2",groundImage);
   sea4.velocityY = 7;
   sea4.scale = 8;
   sea4.rotation = -90;
 
-  sea5 = createSprite(width+160,sea4.y+896,400,20);
+  sea5 = createSprite(width+50,sea4.y+896,400,20);
   sea5.addImage("sea",groundImage);
   sea5.velocityY = 7;
   sea5.scale = 8;
   sea5rotation = -90;
 
-  sea6 = createSprite(width+160,sea5.y+896,400,20);
+  sea6 = createSprite(width+50,sea5.y+896,400,20);
   sea6.addImage("ground",groundImage); 
   sea6.velocityY = 7
   sea6.scale = 8;
