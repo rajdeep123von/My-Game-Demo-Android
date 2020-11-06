@@ -24,7 +24,7 @@ function preload(){
   //trex_running = loadAnimation("trex1.png","trex3.png","trex4.png");
  // trex_collided = loadImage("trex_collided.png");
   
-  seaImage = loadImage("./Obj/sea.png");
+  groundImage = loadImage("./Obj/sea.png");
   
  // cloudImage = loadImage("../Obj/cloud.png");
   
@@ -58,13 +58,12 @@ function setup() {
   skygroup = new Group();
   cloudGroup = new Group();
 
-  skys1 = createSprite(width-700,4,400,20);
+  skys1 = createSprite(width-490,height-100,400,20);
   skys1.addImage("ground",sky);  
-  skys1.y = height-skys1.width/2
   skys1.scale = 3;
   skygroup.add(skys1);
 
- /* skys2 = createSprite(width-490,height-300,400,20);
+  skys2 = createSprite(width-490,height-300,400,20);
   skys2.addImage("ground",sky);  
   skys2.scale = 3;
   skygroup.add(skys2);
@@ -122,17 +121,17 @@ function setup() {
   skys13 = createSprite(width-490,height-2900,400,20);
   skys13.addImage("ground",sky);  
   skys13.scale = 3;
-  skygroup.add(skys13);*/
+  skygroup.add(skys13);
 
- /* skys14 = createSprite(width-490,height-3112,400,20);
+  skys14 = createSprite(width-490,height-3112,400,20);
   skys14.addImage("ground",sky);  
   skys14.scale = 3;
-  skygroup.add(skys14);*/
+  skygroup.add(skys14);
   skygroup.setRotationEach(-90);
-  skygroup.setScaleEach(2);
+  skygroup.setScaleEach(3);
 
 
-  /*sea3 = createSprite(width+50,height-896/2,400,20);
+  sea3 = createSprite(width+50,height-896/2,400,20);
   sea3.addImage("ground",groundImage); 
   sea3.velocityY = 7
   sea3.scale = 8;
@@ -166,26 +165,11 @@ function setup() {
   sea6.addImage("ground",groundImage); 
   sea6.velocityY = 7
   sea6.scale = 8;
-  sea6.rotation = -90;*/
-  sea1 = createSprite(width+50,4,400,20);
-  //sea1.y=height-sea1.width/2;
-  sea1.addImage("ground",seaImage); 
-  sea1.y=height-sea1.width/2;
-  sea1.velocityY = 7
-  sea1.scale = 8;
-  sea1.rotation = -90;
+  sea6.rotation = -90;
 
-  sea2= createSprite(width+50,sea1.y-sea1.width,400,20);
-  sea2.addImage("ground",seaImage); 
-  sea2.velocityY = 7
-  sea2.scale = 8;
-  sea2.rotation = -90;
 
- /* sea3= createSprite(width+50,sea2.y-sea1.width,400,20);
-  sea3.addImage("ground",seaImage); 
-  sea3.velocityY = 7
-  sea3.scale = 8;
-  sea3.rotation = -90;*/
+
+
 
   clouds1 = createSprite(width-340,height-270,400,20);
   clouds1.addImage("clouds",clouds);
@@ -232,12 +216,12 @@ function setup() {
   plr.rotation = -90;
  
 
-  land10 = createSprite(width-40,height-1700);
+  /*land10 = createSprite(width-40,height-1700);
   land10.addImage( "running",big_img);
   land10.scale = 2.5 ;
   land10.setCollider("rectangle",0,0,52,55,0); 
   land10.velocityY = 7;
-  tilesGroup.add(land10);
+  tilesGroup.add(land10);*/
 
   land0 = createSprite(width-40,height-1570);
   land0.addImage( "running",big_img);
@@ -470,16 +454,16 @@ tilesGroup.setLifetimeEach(-1);
 birdsGroup.setLifetimeEach(-1);
     sea1.velocityY = 0;
     sea2.velocityY = 0;
-  
+    sea3.velocityY = 0;
     farg.velocityY = 0;
     
     //bird.destroy();
   
 
   
-  if(mousePressedOver(restart)||(touches.length > 0) ) {
+  if(mousePressedOver(restart)) {
     reset();
-    touches =[];
+    
   }}
 
 console.log(frameCount);
@@ -496,7 +480,7 @@ console.log(frameCount);
 }
 function keyPressed(){
   if(keyCode===32) {
-  //plr.addImage( "running",jump_img);
+  plr.addImage( "running",jump_img);
   plr.velocityX = -16 ;
   touches =[];
   //playSound("jump.mp3");
@@ -603,18 +587,7 @@ function spawntiles() {
   
 }
 function sea(){
-    if(sea1.y>=height+sea1.width/2){
-      sea1.y=sea2.y-sea1.width;
-    }
-
-    if(sea2.y>=height+sea2.width/2){
-      sea2.y=sea1.y-sea2.width;
-    }
-
-    /*if(sea3.y>=height+sea3.width){
-      sea3.y=sea2.y-sea3.width;
-    }
-  /*if(sea3.y<=height+896/2) {      
+  if(sea3.y<=height+896/2) {      
     sea3.y=sea6.y-896
     sea3.velocityY = 7;
   }
@@ -640,8 +613,7 @@ if(sea5.y<=height+896/2){
 }
 if(sea6.y<=height+896/2){
   sea6.y=sea5.y-896
- sea16*/
-}
+ sea16}
 function farground(){
   if(farg.y<=height+50){
     farg.y= -(height)+100;
