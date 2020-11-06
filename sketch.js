@@ -58,12 +58,13 @@ function setup() {
   skygroup = new Group();
   cloudGroup = new Group();
 
-  skys1 = createSprite(width-490,height-100,400,20);
+  skys1 = createSprite(width-700,4,400,20);
   skys1.addImage("ground",sky);  
+  skys1.y = height-skys1.width/2
   skys1.scale = 3;
   skygroup.add(skys1);
 
-  skys2 = createSprite(width-490,height-300,400,20);
+ /* skys2 = createSprite(width-490,height-300,400,20);
   skys2.addImage("ground",sky);  
   skys2.scale = 3;
   skygroup.add(skys2);
@@ -121,14 +122,14 @@ function setup() {
   skys13 = createSprite(width-490,height-2900,400,20);
   skys13.addImage("ground",sky);  
   skys13.scale = 3;
-  skygroup.add(skys13);
+  skygroup.add(skys13);*/
 
-  skys14 = createSprite(width-490,height-3112,400,20);
+ /* skys14 = createSprite(width-490,height-3112,400,20);
   skys14.addImage("ground",sky);  
   skys14.scale = 3;
-  skygroup.add(skys14);
+  skygroup.add(skys14);*/
   skygroup.setRotationEach(-90);
-  skygroup.setScaleEach(3);
+  skygroup.setScaleEach(2);
 
 
   /*sea3 = createSprite(width+50,height-896/2,400,20);
@@ -180,11 +181,11 @@ function setup() {
   sea2.scale = 8;
   sea2.rotation = -90;
 
-  sea3= createSprite(width+50,sea2.y-sea1.width,400,20);
+ /* sea3= createSprite(width+50,sea2.y-sea1.width,400,20);
   sea3.addImage("ground",seaImage); 
   sea3.velocityY = 7
   sea3.scale = 8;
-  sea3.rotation = -90;
+  sea3.rotation = -90;*/
 
   clouds1 = createSprite(width-340,height-270,400,20);
   clouds1.addImage("clouds",clouds);
@@ -469,7 +470,7 @@ tilesGroup.setLifetimeEach(-1);
 birdsGroup.setLifetimeEach(-1);
     sea1.velocityY = 0;
     sea2.velocityY = 0;
-    sea3.velocityY = 0;
+  
     farg.velocityY = 0;
     
     //bird.destroy();
@@ -602,15 +603,15 @@ function spawntiles() {
   
 }
 function sea(){
-    if(sea1.y>=height+sea1.width){
-      sea1.y=sea3.y-sea1.width;
+    if(sea1.y>=height+sea1.width/2){
+      sea1.y=sea2.y-sea1.width;
     }
 
-    if(sea2.y>=height+sea2.width){
+    if(sea2.y>=height+sea2.width/2){
       sea2.y=sea1.y-sea2.width;
     }
 
-    if(sea3.y>=height+sea3.width){
+    /*if(sea3.y>=height+sea3.width){
       sea3.y=sea2.y-sea3.width;
     }
   /*if(sea3.y<=height+896/2) {      
